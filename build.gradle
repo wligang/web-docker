@@ -53,6 +53,6 @@ dependencies {
 }
 
 allprojects {
-    sourceSets.main.resources.srcDirs = ["src/main/resources", "src/main/environment/$env"]
-
+//    sourceSets.main.resources.srcDirs = ["src/main/resources", "src/main/environment/$env"]
+//    sourceSets.main.resources.srcDirs = ["src/main/docker", "src/main/docker"]
 }
