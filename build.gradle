@@ -54,4 +54,5 @@ dependencies {
 
 allprojects {
     sourceSets.main.resources.srcDirs = ["src/main/resources", "src/main/environment/$env"]
+
 }
