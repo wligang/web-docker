@@ -27,7 +27,6 @@ public class IndexController {
     @GetMapping("user/{userName}")
     public Object getUser(@PathVariable String userName) {
         logger.info("Welcome to you :[{}]---{}", userName, new Date());
-
         return String.format("welcome to Hido,your login UserName is[%s]", userName);
     }
 
