@@ -44,6 +44,7 @@ docker {
     name "${bootJar.baseName}"
     files bootJar.archivePath
     buildArgs(['JAR_FILE': "${bootJar.archiveName}"])
+    println "###########JAR_FILE:-----${bootJar.archiveName}#############"
 }
 
 dependencies {
