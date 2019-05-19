@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Date;
+
 /**
  * Author: Ligang.Wang[wlgchun@l63.com]
  * Date: 2019/5/18 23:52
@@ -24,7 +26,8 @@ public class IndexController {
 
     @GetMapping("user/{userName}")
     public Object getUser(@PathVariable String userName) {
-        logger.info("Welcome to you :[{}]", userName);
+        logger.info("Welcome to you :[{}]---{}", userName, new Date());
+
         return String.format("welcome to Hido,your login UserName is[%s]", userName);
     }
 
