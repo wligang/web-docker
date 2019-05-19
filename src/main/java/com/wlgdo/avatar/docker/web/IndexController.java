@@ -23,7 +23,7 @@ public class IndexController {
     }
 
     @GetMapping("user/{userName}")
-    public Object getUuser(@PathVariable String userName) {
+    public Object getUser(@PathVariable String userName) {
         logger.info("Welcome to you :[{}]", userName);
         return String.format("welcome to Hido,your login UserName is[%s]", userName);
     }
