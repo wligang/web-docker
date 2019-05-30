@@ -29,3 +29,4 @@
 .vscode/
 gradle/
 src/main/generated/
+/logs/
