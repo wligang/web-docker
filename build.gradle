@@ -49,9 +49,8 @@ docker {
 
 
 dependencies {
-    compile 'org.springframework.boot:spring-boot-starter-web:2.1.0.RELEASE'
     implementation 'org.springframework.boot:spring-boot-starter'
-    //compile 'org.springframework.boot:spring-boot-starter-controller:2.1.0.RELEASE'
+    compile 'org.springframework.boot:spring-boot-starter-web:2.1.0.RELEASE'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
