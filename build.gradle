@@ -35,7 +35,7 @@ repositories {
 }
 bootJar {
     project.group = "com.wlgdo"
-    baseName = 'avatar-controller-docker'
+    baseName = 'avatar-web-docker'
     version = '1.0'
 }
 docker {
