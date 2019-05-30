@@ -1,4 +1,4 @@
-println "######################[begin compiling] Env:[$env] ######################"
+println "######################[begin build script] Env:[$env] ######################"
 
 buildscript {
     ext {
@@ -36,7 +36,7 @@ repositories {
 }
 bootJar {
     project.group = "com.wlgdo"
-    baseName = 'avatar-web-docker'
+    baseName = 'avatar-controller-docker'
     version = '1.0'
 }
 docker {
@@ -45,11 +45,13 @@ docker {
     files bootJar.archivePath
     buildArgs(['JAR_FILE': "${bootJar.archiveName}"])
     println "###########JAR_FILE:-----${bootJar.archiveName}#############"
+
 }
+
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
-    compile 'org.springframework.boot:spring-boot-starter-web:2.1.0.RELEASE'
+    compile 'org.springframework.boot:spring-boot-starter-controller:2.1.0.RELEASE'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
