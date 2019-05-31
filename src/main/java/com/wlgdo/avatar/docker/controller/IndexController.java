@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.time.LocalTime;
 import java.util.Date;
 
 /**
@@ -20,8 +21,8 @@ public class IndexController {
     @GetMapping("index")
     public Object index() {
 
-        logger.info("This is atest:{}");
-        return "welcome to Hido";
+        logger.info("Hello developer,when you see this console,you have been successful({})", LocalTime.now());
+        return String.format("welcome to Hido:[%s]", LocalTime.now());
     }
 
     @GetMapping("user/{userName}")
@@ -30,6 +31,5 @@ public class IndexController {
 
         return String.format("welcome to Hido,your login UserName is[%s]", userName);
     }
-
 
 }
