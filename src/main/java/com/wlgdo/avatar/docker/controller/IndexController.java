@@ -22,7 +22,7 @@ public class IndexController {
     public Object index() {
 
         logger.info("Hello developer,when you see this console,you have been successful({})", LocalTime.now());
-        return String.format("welcome to Hido:[%s]", LocalTime.now());
+        return String.format("welcome to wlgdo·Hido:[%s]", LocalTime.now());
     }
 
     @GetMapping("user/{userName}")
