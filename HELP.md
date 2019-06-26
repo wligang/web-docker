@@ -1,4 +1,0 @@
-# Getting Started
- I don`t know how to do it
- 
- 
